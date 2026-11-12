@@ -33,7 +33,7 @@ CITY_SUFFIX = "Niagara Falls, NY, USA"
 # QR CODE GENERATOR
 # ------------------------------------------------------------
 
-APP_URL = "YOUR_STREAMLIT_APP_URL"
+APP_URL = "https://niagragospelmap.streamlit.app/"
 
 qr = qrcode.QRCode(
     version=1,
