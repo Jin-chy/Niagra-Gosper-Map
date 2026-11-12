@@ -1,17 +1,17 @@
-id	name	street_address	phone	category			
-1	Niagara Gospel Mission	1317 Portage Road	(716) 205-8805	Shelter & basic needs			
-2	Community Missions of the Niagara Frontier	1570 Buffalo Avenue	(716) 285-3403	Emergency shelter & community support			
-3	Niagara Falls Memorial Health Center	621 10th Street		Healthcare			
-4	Heart, Love, and Soul	939 Ontario Ave	(716) 282-5687	Case management & basic needs			
-5	Trott Center	1001 11th Street	(716) 278-8108	Housing placement & support			
-6	Bus Station	1124 Portage Road	(800) 794-3960	Transportation			
-7	Pinnacle	1522 Main St.	(716) 285-6984	Care coordination			
-8	Niagara Falls City Hall	745 Main St.	(716) 286-4300	Local government services			
-9	Niagara Falls Train Station	825 Depot Ave.	(800) 872-7245	Transportation			
-10	Best Self Behavioral Health	2201 Pine Ave.	(716) 884-0888	Mental health services			
-11	Veterans Affairs Clinic	1300 Pine Ave.	(716) 862-8580	Veterans health services			
-12	Niagara Falls Municipal Building	1925 Main St.	(716) 286-4518	Municipal services			
-13	Niagara County Social Services	301 10th St.	(716) 278-8621	Public assistance & social services			
-14	Niagara Falls Housing Authority	744 10th St.	(716) 285-6961	Housing assistance			
-15	Horizon Health Services	2400 Pine Ave.	(716) 505-1060	Health & addiction treatment			
-16	Northpointe Council	2470 Allen Ave.	(716) 285-3421	Substance-use treatment & prevention			
+"id","name","street_address","phone","category"
+"1","Niagara Gospel Mission","1317 Portage Road","(716) 205-8805","Shelter & basic needs"
+"2","Community Missions of the Niagara Frontier","1570 Buffalo Avenue","(716) 285-3403","Emergency shelter & community support"
+"3","Niagara Falls Memorial Health Center","621 10th Street","","Healthcare"
+"4","Heart, Love, and Soul","939 Ontario Ave","(716) 282-5687","Case management & basic needs"
+"5","Trott Center","1001 11th Street","(716) 278-8108","Housing placement & support"
+"6","Bus Station","1124 Portage Road","(800) 794-3960","Transportation"
+"7","Pinnacle","1522 Main St.","(716) 285-6984","Care coordination"
+"8","Niagara Falls City Hall","745 Main St.","(716) 286-4300","Local government services"
+"9","Niagara Falls Train Station","825 Depot Ave.","(800) 872-7245","Transportation"
+"10","Best Self Behavioral Health","2201 Pine Ave.","(716) 884-0888","Mental health services"
+"11","Veterans Affairs Clinic","1300 Pine Ave.","(716) 862-8580","Veterans health services"
+"12","Niagara Falls Municipal Building","1925 Main St.","(716) 286-4518","Municipal services"
+"13","Niagara County Social Services","301 10th St.","(716) 278-8621","Public assistance & social services"
+"14","Niagara Falls Housing Authority","744 10th St.","(716) 285-6961","Housing assistance"
+"15","Horizon Health Services","2400 Pine Ave.","(716) 505-1060","Health & addiction treatment"
+"16","Northpointe Council","2470 Allen Ave.","(716) 285-3421","Substance-use treatment & prevention"
