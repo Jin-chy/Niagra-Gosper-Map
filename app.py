@@ -1,3 +1,5 @@
+import qrcode
+from io import BytesIO
 import html
 import time
 from pathlib import Path
@@ -26,6 +28,29 @@ LOCATIONS_FILE = DATA_DIR / "locations.csv"
 CACHE_FILE = DATA_DIR / "geocoded_locations.csv"
 
 CITY_SUFFIX = "Niagara Falls, NY, USA"
+
+# ------------------------------------------------------------
+# QR CODE GENERATOR
+# ------------------------------------------------------------
+
+APP_URL = "YOUR_STREAMLIT_APP_URL"
+
+qr = qrcode.QRCode(
+    version=1,
+    box_size=10,
+    border=4
+)
+
+qr.add_data(APP_URL)
+qr.make(fit=True)
+
+qr_image = qr.make_image(
+    fill_color="black",
+    back_color="white"
+)
+
+buffer = BytesIO()
+qr_image.save(buffer, format="PNG")
 
 COLORS = [
     "#C62828", "#EF6C00", "#7B1FA2", "#2E7D32",
@@ -207,13 +232,34 @@ locations = load_locations()
 
 with st.sidebar:
     st.header("Map controls")
+
     search_text = st.text_input("Search organization or address")
     show_phone = st.checkbox("Show phone numbers", value=True)
-    st.caption("Map coordinates are looked up using OpenStreetMap's Nominatim service.")
+
+    st.caption(
+        "Map coordinates are looked up using OpenStreetMap's Nominatim service."
+    )
+
     if st.button("Re-geocode all addresses", use_container_width=True):
         if CACHE_FILE.exists():
             CACHE_FILE.unlink()
         st.rerun()
+
+    # QR CODE SECTION
+    st.divider()
+    st.subheader("Access Map by QR Code")
+
+    st.image(
+        buffer.getvalue(),
+        caption="Scan to access Niagara Falls Services Map"
+    )
+
+    st.download_button(
+        label="Download QR Code",
+        data=buffer.getvalue(),
+        file_name="niagara_falls_services_qr.png",
+        mime="image/png"
+    )
 
 # Geocode once; results are stored in data/geocoded_locations.csv.
 with st.spinner("Loading map locations..."):
