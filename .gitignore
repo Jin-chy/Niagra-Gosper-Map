@@ -1,7 +1,4 @@
 node_modules/
 dist/
-data/geocoded_locations.csv
-data/.geocoded_locations.csv.*
-.venv/
-__pycache__/
 .wrangler/
+data/*.tmp

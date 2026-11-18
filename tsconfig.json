@@ -7,5 +7,5 @@
     "esModuleInterop": true,
     "noEmit": true
   },
-  "include": ["app.ts", "scripts/**/*.ts", "src/**/*.ts"]
+  "include": ["scripts/**/*.ts", "src/**/*.ts"]
 }

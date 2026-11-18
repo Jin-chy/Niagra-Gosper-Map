@@ -1,4 +1,4 @@
-import type { Category, CostType, Location, Service, ServiceGroup } from './types.js';
+import type { Category, Coordinates, CostType, Location, Service, ServiceGroup } from './types.js';
 
 const CITY_SUFFIX = 'Niagara Falls, NY, USA';
 const COST_TYPES: CostType[] = ['free', 'paid', 'insurance', 'unknown'];
@@ -29,6 +29,22 @@ function text(value: unknown, where: string, required = false): string | undefin
   }
   if (typeof value !== 'string') fail(where, 'expected text in quotes');
   return value.trim() || undefined;
+}
+
+function coordinate(value: unknown, where: string, limit: number): number {
+  if (typeof value !== 'number' || !Number.isFinite(value) || Math.abs(value) > limit) fail(where, `must be a number between -${limit} and ${limit}`);
+  return value;
+}
+
+function coordinates(value: unknown, where: string): Coordinates | undefined {
+  if (value === undefined) return undefined;
+  const raw = object(value, where);
+  return {
+    latitude: coordinate(raw.latitude, `${where} latitude`, 90),
+    longitude: coordinate(raw.longitude, `${where} longitude`, 180),
+    matchedAddress: text(raw.matchedAddress, `${where} matchedAddress`),
+    lookupAddress: text(raw.lookupAddress, `${where} lookupAddress`),
+  };
 }
 
 function texts(value: unknown, where: string): string[] {
@@ -145,6 +161,7 @@ export function parseDirectory(json: string): { categories: Category[]; location
       lastVerified: text(raw.lastVerified, `${where} lastVerified`),
       notes: texts(raw.notes, `${where} notes`),
       serviceGroups,
+      coordinates: coordinates(raw.coordinates, `${where} coordinates`),
     };
   });
 

@@ -145,11 +145,6 @@ mark { padding: 0 .1rem; background: #ffe58a; color: inherit; }
 .site-footer img { display: block; }
 .site-footer > p { margin-top: .75rem; }
 #inactive-list { padding-left: 1.1rem; }
-.table-wrap { overflow: auto; }
-table { width: 100%; border-collapse: collapse; }
-th, td { padding: .4rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
-#refresh { padding: .5rem .9rem; border: 1px solid var(--link); border-radius: .4rem; background: var(--link); color: #fff; font-size: .8rem; cursor: pointer; }
-#refresh:disabled { opacity: .6; cursor: wait; }
 
 /* ---- Small phones ---- */
 @media (max-width: 360px) {

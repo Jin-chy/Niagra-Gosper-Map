@@ -25,6 +25,15 @@ export interface ServiceGroup {
 
 export type CostType = 'free' | 'paid' | 'insurance' | 'unknown';
 
+export interface Coordinates {
+  latitude: number;
+  longitude: number;
+  /** The geocoder's description of the match, for checking the pin. */
+  matchedAddress?: string;
+  /** The address that was looked up. When it no longer matches, the location is looked up again. */
+  lookupAddress?: string;
+}
+
 export interface Location {
   id: number;
   name: string;
@@ -47,19 +56,17 @@ export interface Location {
   lastVerified?: string;
   notes: string[];
   serviceGroups: ServiceGroup[];
+  coordinates?: Coordinates;
 }
 
-export interface Geocode {
-  latitude: number | null;
-  longitude: number | null;
-  matchedAddress: string;
-}
+/** A location as the page receives it: numbered, with only what the page needs. */
+export type SiteLocation = Omit<Location, 'lookupAddress' | 'coordinates'> & {
+  /** Display number, 1, 2, 3… across active locations with no gaps. */
+  pin?: number;
+  coordinates?: { latitude: number; longitude: number };
+};
 
-export type MappedLocation = Location & Geocode;
-
-export interface MapData {
+export interface SiteData {
   categories: Category[];
-  locations: MappedLocation[];
-  needsGeocoding: boolean;
-  warning?: string;
+  locations: SiteLocation[];
 }

@@ -1,44 +1,306 @@
 {
   "categories": [
-    { "id": "housing", "short": "Shelter & housing", "name": "Housing & Emergency Shelter", "icon": "🏠", "color": "#B3261E",
-      "needs": ["Emergency shelter", "Men's shelter", "Youth shelter", "Domestic violence shelter", "Code Blue", "Transitional housing", "Affordable housing", "Rental assistance", "Housing referrals"] },
-    { "id": "food", "short": "Food", "name": "Food & Meals", "icon": "🍽️", "color": "#A84B00",
-      "needs": ["Breakfast", "Lunch", "Dinner", "Food pantry", "Free meals", "SNAP assistance", "Children's meals", "Takeout meals", "Weekend meals"] },
-    { "id": "employment", "short": "Jobs", "name": "Employment & Career Assistance", "icon": "💼", "color": "#5D4037",
-      "needs": ["Job search", "Résumé assistance", "Career counseling", "Job training", "Tuition assistance", "Youth employment", "Disability employment assistance"] },
-    { "id": "education", "short": "Education", "name": "Education & Skills Development", "icon": "🎓", "color": "#3949AB",
-      "needs": ["Computer training", "Digital literacy", "Vocational training", "College preparation", "Youth tutoring", "Scholarships"] },
-    { "id": "medical", "short": "Medical", "name": "Medical & Healthcare", "icon": "🩺", "color": "#C2185B",
-      "needs": ["Emergency care", "Primary care", "Vaccinations", "Medication assistance", "Health insurance assistance", "Laboratory services", "Rehabilitation", "Telehealth"] },
-    { "id": "mental-health", "short": "Mental health", "name": "Mental Health & Counseling", "icon": "🧠", "color": "#6A1B9A", "needs": [] },
-    { "id": "addiction", "short": "Recovery", "name": "Addiction Treatment & Recovery", "icon": "🌱", "color": "#2E7D32", "needs": [] },
-    { "id": "government", "short": "Benefits & ID", "name": "Government & Financial Assistance", "icon": "🏛️", "color": "#1F4E79",
-      "needs": ["SNAP", "Medicaid", "Cash assistance", "Rental assistance", "Utility assistance", "Birth certificates", "Government documents"] },
-    { "id": "transportation", "short": "Transit", "name": "Public Transportation", "icon": "🚌", "color": "#00695C", "needs": [] },
-    { "id": "clothing", "short": "Clothing & hygiene", "name": "Clothing & Hygiene", "icon": "👕", "color": "#AD1457",
-      "needs": ["Free clothing", "Showers", "Laundry", "Haircuts", "Hygiene products", "Household supplies", "Furniture"] },
-    { "id": "legal", "short": "Legal & safety", "name": "Legal & Public Safety", "icon": "⚖️", "color": "#37474F", "needs": [] },
-    { "id": "veterans", "short": "Veterans", "name": "Veterans Services", "icon": "🎖️", "color": "#283593", "needs": [] },
-    { "id": "family", "short": "Family & youth", "name": "Family & Youth Services", "icon": "👪", "color": "#8E3A00", "needs": [] },
-    { "id": "technology", "short": "Internet & computers", "name": "Technology & Internet Access", "icon": "💻", "color": "#0D5C8C", "needs": [] },
-    { "id": "domestic-violence", "short": "Domestic violence", "name": "Domestic Violence & Crisis Assistance", "icon": "🛡️", "color": "#7B1FA2", "needs": [] },
-
-    { "id": "ged", "short": "GED", "name": "GED preparation", "icon": "📝", "color": "#3949AB", "needs": [] },
-    { "id": "libraries", "short": "Libraries", "name": "Public libraries", "icon": "📚", "color": "#5D4037", "needs": [] },
-    { "id": "wifi", "short": "Wi-Fi", "name": "Free Wi-Fi", "icon": "📶", "color": "#0D5C8C", "needs": [] },
-    { "id": "phone-charging", "short": "Phone charging", "name": "Phone charging", "icon": "🔌", "color": "#37474F", "needs": [] },
-    { "id": "legal-aid", "short": "Legal aid", "name": "Free legal aid", "icon": "📜", "color": "#37474F", "needs": [] },
-    { "id": "dental", "short": "Dental", "name": "Dental care", "icon": "🦷", "color": "#C2185B", "needs": [] },
-    { "id": "vision", "short": "Vision", "name": "Vision care", "icon": "👓", "color": "#C2185B", "needs": [] },
-    { "id": "id-replacement", "short": "ID help", "name": "Identification replacement assistance", "icon": "🪪", "color": "#1F4E79", "needs": [] },
-    { "id": "phone-service", "short": "Phones", "name": "Free or affordable phone services", "icon": "📱", "color": "#0D5C8C", "needs": [] },
-    { "id": "childcare", "short": "Childcare", "name": "Childcare assistance", "icon": "🧸", "color": "#8E3A00", "needs": [] },
-    { "id": "warming", "short": "Warming centers", "name": "Warming centers", "icon": "🔥", "color": "#B3261E", "needs": [] },
-    { "id": "cooling", "short": "Cooling centers", "name": "Cooling centers", "icon": "❄️", "color": "#00695C", "needs": [] },
-    { "id": "disability", "short": "Disability", "name": "Disability services", "icon": "♿", "color": "#283593", "needs": [] },
-    { "id": "weekend-food", "short": "Weekend food", "name": "Weekend food programs", "icon": "🥪", "color": "#A84B00", "needs": [] }
+    {
+      "id": "housing",
+      "short": "Shelter & housing",
+      "name": "Housing & Emergency Shelter",
+      "icon": "🏠",
+      "color": "#B3261E",
+      "needs": [
+        "Emergency shelter",
+        "Men's shelter",
+        "Youth shelter",
+        "Domestic violence shelter",
+        "Code Blue",
+        "Transitional housing",
+        "Affordable housing",
+        "Rental assistance",
+        "Housing referrals"
+      ]
+    },
+    {
+      "id": "code-blue",
+      "short": "Code Blue",
+      "name": "Code Blue (extreme cold shelter)",
+      "icon": "🥶",
+      "color": "#0D47A1",
+      "needs": []
+    },
+    {
+      "id": "food",
+      "short": "Food",
+      "name": "Food & Meals",
+      "icon": "🍽️",
+      "color": "#A84B00",
+      "needs": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Food pantry",
+        "Free meals",
+        "SNAP assistance",
+        "Children's meals",
+        "Takeout meals",
+        "Weekend meals"
+      ]
+    },
+    {
+      "id": "employment",
+      "short": "Jobs",
+      "name": "Employment & Career Assistance",
+      "icon": "💼",
+      "color": "#5D4037",
+      "needs": [
+        "Job search",
+        "Résumé assistance",
+        "Career counseling",
+        "Job training",
+        "Tuition assistance",
+        "Youth employment",
+        "Disability employment assistance"
+      ]
+    },
+    {
+      "id": "education",
+      "short": "Education",
+      "name": "Education & Skills Development",
+      "icon": "🎓",
+      "color": "#3949AB",
+      "needs": [
+        "Computer training",
+        "Digital literacy",
+        "Vocational training",
+        "College preparation",
+        "Youth tutoring",
+        "Scholarships"
+      ]
+    },
+    {
+      "id": "medical",
+      "short": "Medical",
+      "name": "Medical & Healthcare",
+      "icon": "🩺",
+      "color": "#C2185B",
+      "needs": [
+        "Emergency care",
+        "Primary care",
+        "Vaccinations",
+        "Medication assistance",
+        "Health insurance assistance",
+        "Laboratory services",
+        "Rehabilitation",
+        "Telehealth"
+      ]
+    },
+    {
+      "id": "mental-health",
+      "short": "Mental health",
+      "name": "Mental Health & Counseling",
+      "icon": "🧠",
+      "color": "#6A1B9A",
+      "needs": []
+    },
+    {
+      "id": "addiction",
+      "short": "Recovery",
+      "name": "Addiction Treatment & Recovery",
+      "icon": "🌱",
+      "color": "#2E7D32",
+      "needs": []
+    },
+    {
+      "id": "government",
+      "short": "Benefits & ID",
+      "name": "Government & Financial Assistance",
+      "icon": "🏛️",
+      "color": "#1F4E79",
+      "needs": [
+        "SNAP",
+        "Medicaid",
+        "Cash assistance",
+        "Rental assistance",
+        "Utility assistance",
+        "Birth certificates",
+        "Government documents"
+      ]
+    },
+    {
+      "id": "transportation",
+      "short": "Transit",
+      "name": "Public Transportation",
+      "icon": "🚌",
+      "color": "#00695C",
+      "needs": []
+    },
+    {
+      "id": "clothing",
+      "short": "Clothing & hygiene",
+      "name": "Clothing & Hygiene",
+      "icon": "👕",
+      "color": "#AD1457",
+      "needs": [
+        "Free clothing",
+        "Showers",
+        "Laundry",
+        "Haircuts",
+        "Hygiene products",
+        "Household supplies",
+        "Furniture"
+      ]
+    },
+    {
+      "id": "legal",
+      "short": "Legal & safety",
+      "name": "Legal & Public Safety",
+      "icon": "⚖️",
+      "color": "#37474F",
+      "needs": []
+    },
+    {
+      "id": "veterans",
+      "short": "Veterans",
+      "name": "Veterans Services",
+      "icon": "🎖️",
+      "color": "#283593",
+      "needs": []
+    },
+    {
+      "id": "family",
+      "short": "Family & youth",
+      "name": "Family & Youth Services",
+      "icon": "👪",
+      "color": "#8E3A00",
+      "needs": []
+    },
+    {
+      "id": "technology",
+      "short": "Internet & computers",
+      "name": "Technology & Internet Access",
+      "icon": "💻",
+      "color": "#0D5C8C",
+      "needs": []
+    },
+    {
+      "id": "domestic-violence",
+      "short": "Domestic violence",
+      "name": "Domestic Violence & Crisis Assistance",
+      "icon": "🛡️",
+      "color": "#7B1FA2",
+      "needs": []
+    },
+    {
+      "id": "ged",
+      "short": "GED",
+      "name": "GED preparation",
+      "icon": "📝",
+      "color": "#3949AB",
+      "needs": []
+    },
+    {
+      "id": "libraries",
+      "short": "Libraries",
+      "name": "Public libraries",
+      "icon": "📚",
+      "color": "#5D4037",
+      "needs": []
+    },
+    {
+      "id": "wifi",
+      "short": "Wi-Fi",
+      "name": "Free Wi-Fi",
+      "icon": "📶",
+      "color": "#0D5C8C",
+      "needs": []
+    },
+    {
+      "id": "phone-charging",
+      "short": "Phone charging",
+      "name": "Phone charging",
+      "icon": "🔌",
+      "color": "#37474F",
+      "needs": []
+    },
+    {
+      "id": "legal-aid",
+      "short": "Legal aid",
+      "name": "Free legal aid",
+      "icon": "📜",
+      "color": "#37474F",
+      "needs": []
+    },
+    {
+      "id": "dental",
+      "short": "Dental",
+      "name": "Dental care",
+      "icon": "🦷",
+      "color": "#C2185B",
+      "needs": []
+    },
+    {
+      "id": "vision",
+      "short": "Vision",
+      "name": "Vision care",
+      "icon": "👓",
+      "color": "#C2185B",
+      "needs": []
+    },
+    {
+      "id": "id-replacement",
+      "short": "ID help",
+      "name": "Identification replacement assistance",
+      "icon": "🪪",
+      "color": "#1F4E79",
+      "needs": []
+    },
+    {
+      "id": "phone-service",
+      "short": "Phones",
+      "name": "Free or affordable phone services",
+      "icon": "📱",
+      "color": "#0D5C8C",
+      "needs": []
+    },
+    {
+      "id": "childcare",
+      "short": "Childcare",
+      "name": "Childcare assistance",
+      "icon": "🧸",
+      "color": "#8E3A00",
+      "needs": []
+    },
+    {
+      "id": "warming",
+      "short": "Warming centers",
+      "name": "Warming centers",
+      "icon": "🔥",
+      "color": "#B3261E",
+      "needs": []
+    },
+    {
+      "id": "cooling",
+      "short": "Cooling centers",
+      "name": "Cooling centers",
+      "icon": "❄️",
+      "color": "#00695C",
+      "needs": []
+    },
+    {
+      "id": "disability",
+      "short": "Disability",
+      "name": "Disability services",
+      "icon": "♿",
+      "color": "#283593",
+      "needs": []
+    },
+    {
+      "id": "weekend-food",
+      "short": "Weekend food",
+      "name": "Weekend food programs",
+      "icon": "🥪",
+      "color": "#A84B00",
+      "needs": []
+    }
   ],
-
   "locations": [
     {
       "id": 1,
@@ -46,66 +308,222 @@
       "address": "825 Depot Avenue West",
       "geocodeQuery": "825 Depot Avenue",
       "phone": "(800) 872-7245",
-      "categories": ["transportation"],
-      "cost": { "type": "paid", "note": "Paid transportation" },
-      "websites": ["https://www.amtrak.com/stations/nfl"],
+      "categories": [
+        "transportation"
+      ],
+      "cost": {
+        "type": "paid",
+        "note": "Paid transportation"
+      },
+      "websites": [
+        "https://www.amtrak.com/stations/nfl"
+      ],
       "serviceGroups": [
-        { "title": "Services", "categories": ["transportation"], "services": [
-          "Amtrak passenger train services",
-          "Transportation to Buffalo and other cities",
-          "Long-distance transportation",
-          "Train ticket assistance"
-        ] }
-      ]
+        {
+          "title": "Services",
+          "categories": [
+            "transportation"
+          ],
+          "services": [
+            "Amtrak passenger train services",
+            "Transportation to Buffalo and other cities",
+            "Long-distance transportation",
+            "Train ticket assistance"
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.1103782,
+        "longitude": -79.05393,
+        "matchedAddress": "825, Depot Avenue, City of Niagara Falls, Niagara County, New York, 14305, United States",
+        "lookupAddress": "825 Depot Avenue, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 2,
       "name": "Heart, Love & Soul",
       "address": "939 Ontario Avenue",
       "phone": "(716) 282-5687",
-      "categories": ["food", "clothing", "housing", "medical", "government", "technology"],
+      "categories": [
+        "food",
+        "clothing",
+        "housing",
+        "medical",
+        "government",
+        "technology"
+      ],
       "hours": "Daybreak Program: 9:00 AM–3:00 PM",
       "eligibility": "Certain services require registration, referrals, or homelessness eligibility.",
-      "websites": ["https://heartloveandsoul.org/"],
+      "websites": [
+        "https://heartloveandsoul.org/"
+      ],
       "serviceGroups": [
-        { "title": "Food services", "categories": ["food"], "services": [
-          { "name": "Free breakfast", "hours": "Monday–Friday, 9:00–10:00 AM", "needs": ["Breakfast", "Free meals"] },
-          { "name": "Free lunch", "hours": "Monday–Friday, 11:30 AM–1:00 PM", "needs": ["Lunch", "Free meals"] },
-          { "name": "Food pantry", "hours": "Monday–Friday, 10:00 AM–1:00 PM", "needs": ["Food pantry"] },
-          { "name": "Takeout meals", "needs": ["Takeout meals"] },
-          "Grocery assistance"
-        ] },
-        { "title": "Personal care services", "categories": ["clothing"], "services": [
-          { "name": "Free showers", "needs": ["Showers"] },
-          { "name": "Free laundry", "needs": ["Laundry"] },
-          { "name": "Free haircuts", "needs": ["Haircuts"] },
-          { "name": "Toothbrushes and toothpaste", "needs": ["Hygiene products"] },
-          { "name": "Razors and personal hygiene supplies", "needs": ["Hygiene products"] },
-          { "name": "Toilet paper", "needs": ["Hygiene products"] },
-          { "name": "Laundry detergent", "needs": ["Household supplies"] },
-          { "name": "Household necessities", "needs": ["Household supplies"] }
-        ] },
-        { "title": "Housing and social services", "categories": ["housing"], "services": [
-          "Housing assessments",
-          { "name": "Housing referrals", "needs": ["Housing referrals"] },
-          "Homeless outreach",
-          { "name": "Case management", "categories": [] },
-          { "name": "Benefits application assistance", "categories": ["government"] },
-          { "name": "Community resource referrals", "categories": [] }
-        ] },
-        { "title": "Medical services", "categories": ["medical"], "services": [
-          "Community health nursing",
-          "First aid",
-          "Healthcare referrals",
-          { "name": "Telehealth access", "needs": ["Telehealth"] }
-        ] },
-        { "title": "Technology services", "categories": ["technology"], "services": [
-          { "name": "Computer access", "limitedTo": "By referral" },
-          "Internet access for appointments",
-          { "name": "Printer access", "limitedTo": "By referral" },
-          "Virtual appointment assistance"
-        ] }
-      ]
+        {
+          "title": "Food services",
+          "categories": [
+            "food"
+          ],
+          "services": [
+            {
+              "name": "Free breakfast",
+              "hours": "Monday–Friday, 9:00–10:00 AM",
+              "needs": [
+                "Breakfast",
+                "Free meals"
+              ]
+            },
+            {
+              "name": "Free lunch",
+              "hours": "Monday–Friday, 11:30 AM–1:00 PM",
+              "needs": [
+                "Lunch",
+                "Free meals"
+              ]
+            },
+            {
+              "name": "Food pantry",
+              "hours": "Monday–Friday, 10:00 AM–1:00 PM",
+              "needs": [
+                "Food pantry"
+              ]
+            },
+            {
+              "name": "Takeout meals",
+              "needs": [
+                "Takeout meals"
+              ]
+            },
+            "Grocery assistance"
+          ]
+        },
+        {
+          "title": "Personal care services",
+          "categories": [
+            "clothing"
+          ],
+          "services": [
+            {
+              "name": "Free showers",
+              "needs": [
+                "Showers"
+              ]
+            },
+            {
+              "name": "Free laundry",
+              "needs": [
+                "Laundry"
+              ]
+            },
+            {
+              "name": "Free haircuts",
+              "needs": [
+                "Haircuts"
+              ]
+            },
+            {
+              "name": "Toothbrushes and toothpaste",
+              "needs": [
+                "Hygiene products"
+              ]
+            },
+            {
+              "name": "Razors and personal hygiene supplies",
+              "needs": [
+                "Hygiene products"
+              ]
+            },
+            {
+              "name": "Toilet paper",
+              "needs": [
+                "Hygiene products"
+              ]
+            },
+            {
+              "name": "Laundry detergent",
+              "needs": [
+                "Household supplies"
+              ]
+            },
+            {
+              "name": "Household necessities",
+              "needs": [
+                "Household supplies"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Housing and social services",
+          "categories": [
+            "housing"
+          ],
+          "services": [
+            "Housing assessments",
+            {
+              "name": "Housing referrals",
+              "needs": [
+                "Housing referrals"
+              ]
+            },
+            "Homeless outreach",
+            {
+              "name": "Case management",
+              "categories": []
+            },
+            {
+              "name": "Benefits application assistance",
+              "categories": [
+                "government"
+              ]
+            },
+            {
+              "name": "Community resource referrals",
+              "categories": []
+            }
+          ]
+        },
+        {
+          "title": "Medical services",
+          "categories": [
+            "medical"
+          ],
+          "services": [
+            "Community health nursing",
+            "First aid",
+            "Healthcare referrals",
+            {
+              "name": "Telehealth access",
+              "needs": [
+                "Telehealth"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Technology services",
+          "categories": [
+            "technology"
+          ],
+          "services": [
+            {
+              "name": "Computer access",
+              "limitedTo": "By referral"
+            },
+            "Internet access for appointments",
+            {
+              "name": "Printer access",
+              "limitedTo": "By referral"
+            },
+            "Virtual appointment assistance"
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.1082015,
+        "longitude": -79.0526985,
+        "matchedAddress": "939, Ontario Avenue, City of Niagara Falls, Niagara County, New York, 14305, United States",
+        "lookupAddress": "939 Ontario Avenue, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 3,
@@ -113,88 +531,287 @@
       "address": "1925 Main Street",
       "phone": "(716) 286-4518",
       "phoneNote": "Verify the department contact",
-      "categories": ["government", "legal"],
-      "websites": ["https://www.nfpolice.com/", "https://www.nycourts.gov/"],
+      "categories": [
+        "government",
+        "legal"
+      ],
+      "websites": [
+        "https://www.nfpolice.com/",
+        "https://www.nycourts.gov/"
+      ],
       "serviceGroups": [
-        { "title": "Services", "categories": ["legal"], "services": [
-          "Police assistance",
-          "Crime reporting",
-          { "name": "Municipal government information", "categories": ["government"] },
-          "City court services",
-          "Court case information",
-          "Police report assistance",
-          "Public safety information"
-        ] }
-      ]
+        {
+          "title": "Services",
+          "categories": [
+            "legal"
+          ],
+          "services": [
+            "Police assistance",
+            "Crime reporting",
+            {
+              "name": "Municipal government information",
+              "categories": [
+                "government"
+              ]
+            },
+            "City court services",
+            "Court case information",
+            "Police report assistance",
+            "Public safety information"
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.10615,
+        "longitude": -79.052706,
+        "matchedAddress": "Niagara Falls Municipal Complex, 1925, Main Street, City of Niagara Falls, Niagara County, New York, 14305, United States",
+        "lookupAddress": "1925 Main Street, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 4,
       "name": "Pinnacle Community Services",
       "address": "1522 Main Street",
       "phone": "(716) 285-6984",
-      "categories": ["housing", "mental-health", "family", "domestic-violence"],
-      "websites": ["https://www.pinnaclecs.org/"],
+      "categories": [
+        "housing",
+        "mental-health",
+        "family",
+        "domestic-violence"
+      ],
+      "websites": [
+        "https://www.pinnaclecs.org/"
+      ],
       "notes": [
         "Passage House, the emergency domestic violence shelter, is at a confidential location. Call Pinnacle for help.",
         "Casey House, the emergency youth shelter, operates at a separate location: 710 Cedar Avenue."
       ],
       "serviceGroups": [
-        { "title": "Services", "categories": ["family"], "services": [
-          { "name": "Domestic violence assistance", "categories": ["domestic-violence"] },
-          { "name": "Emergency domestic violence shelter through Passage House", "categories": ["housing", "domestic-violence"], "needs": ["Emergency shelter", "Domestic violence shelter"] },
-          { "name": "Emergency youth shelter through Casey House", "categories": ["housing", "family"], "needs": ["Emergency shelter", "Youth shelter"] },
-          { "name": "Domestic violence counseling", "categories": ["domestic-violence", "mental-health"] },
-          { "name": "Crisis intervention", "categories": ["domestic-violence", "mental-health"] },
-          { "name": "Community advocacy", "categories": ["domestic-violence"] },
-          { "name": "Care coordination", "categories": [] },
-          "Parenting education",
-          "Family development programs",
-          "Pregnancy support",
-          "Healthy Families Niagara program",
-          "Fatherhood support",
-          { "name": "Community resource referrals", "categories": [] },
-          { "name": "Assistance accessing healthcare and social services", "categories": [] }
-        ] }
-      ]
+        {
+          "title": "Services",
+          "categories": [
+            "family"
+          ],
+          "services": [
+            {
+              "name": "Domestic violence assistance",
+              "categories": [
+                "domestic-violence"
+              ]
+            },
+            {
+              "name": "Emergency domestic violence shelter through Passage House",
+              "categories": [
+                "housing",
+                "domestic-violence"
+              ],
+              "needs": [
+                "Emergency shelter",
+                "Domestic violence shelter"
+              ]
+            },
+            {
+              "name": "Emergency youth shelter through Casey House",
+              "categories": [
+                "housing",
+                "family"
+              ],
+              "needs": [
+                "Emergency shelter",
+                "Youth shelter"
+              ]
+            },
+            {
+              "name": "Domestic violence counseling",
+              "categories": [
+                "domestic-violence",
+                "mental-health"
+              ]
+            },
+            {
+              "name": "Crisis intervention",
+              "categories": [
+                "domestic-violence",
+                "mental-health"
+              ]
+            },
+            {
+              "name": "Community advocacy",
+              "categories": [
+                "domestic-violence"
+              ]
+            },
+            {
+              "name": "Care coordination",
+              "categories": []
+            },
+            "Parenting education",
+            "Family development programs",
+            "Pregnancy support",
+            "Healthy Families Niagara program",
+            "Fatherhood support",
+            {
+              "name": "Community resource referrals",
+              "categories": []
+            },
+            {
+              "name": "Assistance accessing healthcare and social services",
+              "categories": []
+            }
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.1033233,
+        "longitude": -79.0527372,
+        "matchedAddress": "1522, Main Street, City of Niagara Falls, Niagara County, New York, 14305, United States",
+        "lookupAddress": "1522 Main Street, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 5,
       "name": "Niagara Gospel Mission",
       "address": "1317 Portage Road",
       "phone": "(716) 205-8805",
-      "categories": ["housing", "food", "clothing", "addiction", "employment"],
-      "websites": ["https://niagaragospelmission.org/"],
+      "categories": [
+        "housing",
+        "code-blue",
+        "food",
+        "clothing",
+        "addiction",
+        "employment"
+      ],
+      "websites": [
+        "https://niagaragospelmission.org/"
+      ],
       "notes": [
         "Breakfast and lunch are listed for residential participants. Call to confirm whether breakfast or lunch is open to the public."
       ],
       "serviceGroups": [
-        { "title": "Food services", "categories": ["food"], "services": [
-          { "name": "Free community dinner", "hours": "Daily at 5:00 PM", "needs": ["Dinner", "Free meals", "Weekend meals"] },
-          { "name": "Breakfast", "limitedTo": "Residential participants", "needs": ["Breakfast"] },
-          { "name": "Lunch", "limitedTo": "Residential participants", "needs": ["Lunch"] },
-          "Thanksgiving meals",
-          "Christmas meals"
-        ] },
-        { "title": "Housing services", "categories": ["housing"], "services": [
-          { "name": "Men's emergency homeless shelter", "needs": ["Emergency shelter", "Men's shelter"] },
-          { "name": "Code Blue emergency shelter", "needs": ["Emergency shelter", "Code Blue"] },
-          { "name": "Transitional housing", "needs": ["Transitional housing"] },
-          "Independent living preparation"
-        ] },
-        { "title": "Personal care services", "categories": ["clothing"], "services": [
-          "Clothing closet",
-          { "name": "Showers", "limitedTo": "Shelter participants", "needs": ["Showers"] },
-          { "name": "Laundry", "limitedTo": "Eligible residential participants", "needs": ["Laundry"] }
-        ] },
-        { "title": "Recovery and employment services", "categories": [], "services": [
-          { "name": "Faith-based recovery programs", "categories": ["addiction"] },
-          "Mentorship",
-          "Spiritual support",
-          { "name": "Employment retention assistance", "limitedTo": "Transitional housing participants", "categories": ["employment"] },
-          { "name": "Financial independence preparation", "categories": ["employment"] },
-          "Independent living support"
-        ] }
-      ]
+        {
+          "title": "Food services",
+          "categories": [
+            "food"
+          ],
+          "services": [
+            {
+              "name": "Free community dinner",
+              "hours": "Daily at 5:00 PM",
+              "needs": [
+                "Dinner",
+                "Free meals",
+                "Weekend meals"
+              ]
+            },
+            {
+              "name": "Breakfast",
+              "limitedTo": "Residential participants",
+              "needs": [
+                "Breakfast"
+              ]
+            },
+            {
+              "name": "Lunch",
+              "limitedTo": "Residential participants",
+              "needs": [
+                "Lunch"
+              ]
+            },
+            "Thanksgiving meals",
+            "Christmas meals"
+          ]
+        },
+        {
+          "title": "Housing services",
+          "categories": [
+            "housing"
+          ],
+          "services": [
+            {
+              "name": "Men's emergency homeless shelter",
+              "needs": [
+                "Emergency shelter",
+                "Men's shelter"
+              ]
+            },
+            {
+              "name": "Code Blue emergency shelter",
+              "needs": [
+                "Emergency shelter",
+                "Code Blue"
+              ],
+              "categories": [
+                "housing",
+                "code-blue"
+              ]
+            },
+            {
+              "name": "Transitional housing",
+              "needs": [
+                "Transitional housing"
+              ]
+            },
+            "Independent living preparation"
+          ]
+        },
+        {
+          "title": "Personal care services",
+          "categories": [
+            "clothing"
+          ],
+          "services": [
+            "Clothing closet",
+            {
+              "name": "Showers",
+              "limitedTo": "Shelter participants",
+              "needs": [
+                "Showers"
+              ]
+            },
+            {
+              "name": "Laundry",
+              "limitedTo": "Eligible residential participants",
+              "needs": [
+                "Laundry"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Recovery and employment services",
+          "categories": [],
+          "services": [
+            {
+              "name": "Faith-based recovery programs",
+              "categories": [
+                "addiction"
+              ]
+            },
+            "Mentorship",
+            "Spiritual support",
+            {
+              "name": "Employment retention assistance",
+              "limitedTo": "Transitional housing participants",
+              "categories": [
+                "employment"
+              ]
+            },
+            {
+              "name": "Financial independence preparation",
+              "categories": [
+                "employment"
+              ]
+            },
+            "Independent living support"
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.1012752,
+        "longitude": -79.0515408,
+        "matchedAddress": "1317, Portage Road, City of Niagara Falls, Niagara County, New York, 14301, United States",
+        "lookupAddress": "1317 Portage Road, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 6,
@@ -202,19 +819,41 @@
       "address": "1124 Portage Road",
       "phone": "(800) 794-3960",
       "phoneNote": "Verify the current contact",
-      "categories": ["transportation"],
-      "cost": { "type": "paid", "note": "Paid transportation; reduced fares may be available." },
-      "websites": ["https://metro.nfta.com/"],
+      "categories": [
+        "transportation"
+      ],
+      "cost": {
+        "type": "paid",
+        "note": "Paid transportation; reduced fares may be available."
+      },
+      "websites": [
+        "https://metro.nfta.com/"
+      ],
       "serviceGroups": [
-        { "title": "Services", "categories": ["transportation"], "services": [
-          "NFTA Metro bus transportation",
-          "Local transportation",
-          "Regional transportation",
-          "Bus route and schedule information",
-          "MetGo fare card information",
-          { "name": "Reduced-fare programs", "limitedTo": "Eligible passengers" }
-        ] }
-      ]
+        {
+          "title": "Services",
+          "categories": [
+            "transportation"
+          ],
+          "services": [
+            "NFTA Metro bus transportation",
+            "Local transportation",
+            "Regional transportation",
+            "Bus route and schedule information",
+            "MetGo fare card information",
+            {
+              "name": "Reduced-fare programs",
+              "limitedTo": "Eligible passengers"
+            }
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.099783,
+        "longitude": -79.0514892,
+        "matchedAddress": "NFTA Portage Road Transit Center, 1124, Portage Road, City of Niagara Falls, Niagara County, New York, 14301, United States",
+        "lookupAddress": "1124 Portage Road, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 7,
@@ -222,104 +861,384 @@
       "address": "1001 11th Street",
       "phone": "(716) 278-8108",
       "phoneNote": "Verify the department-specific contact",
-      "categories": ["employment", "education", "government", "mental-health", "medical", "addiction"],
-      "websites": ["https://downloads.niagaracounty.gov/worksource_one/index.php"],
+      "categories": [
+        "employment",
+        "education",
+        "government",
+        "mental-health",
+        "medical",
+        "addiction"
+      ],
+      "websites": [
+        "https://downloads.niagaracounty.gov/worksource_one/index.php"
+      ],
       "serviceGroups": [
-        { "title": "Employment services through WorkSourceOne", "categories": ["employment"], "services": [
-          { "name": "Job search assistance", "needs": ["Job search"] },
-          { "name": "Job listings", "needs": ["Job search"] },
-          { "name": "Résumé preparation", "needs": ["Résumé assistance"] },
-          { "name": "Career counseling", "needs": ["Career counseling"] },
-          { "name": "Job training", "categories": ["employment", "education"], "needs": ["Job training"] },
-          "Workforce development",
-          { "name": "Tuition assistance", "limitedTo": "Eligible applicants", "categories": ["employment", "education"], "needs": ["Tuition assistance"] },
-          { "name": "Youth employment programs", "categories": ["employment", "family"], "needs": ["Youth employment"] },
-          "Adult employment programs",
-          { "name": "Disability employment assistance", "needs": ["Disability employment assistance"] }
-        ] },
-        { "title": "Medical and mental health services", "categories": ["medical"], "services": [
-          { "name": "Mental health counseling", "categories": ["mental-health"] },
-          "Wellness services",
-          { "name": "Vaccinations", "needs": ["Vaccinations"] },
-          { "name": "Children's health programs", "categories": ["medical", "family"] },
-          { "name": "Assistance for children with special healthcare needs", "categories": ["medical", "family"] }
-        ] },
-        { "title": "Addiction services", "categories": ["addiction"], "services": [
-          "Northpointe outpatient addiction treatment",
-          "Addiction assessments",
-          "Recovery services",
-          { "name": "Open-access services", "hours": "Monday–Friday, 9:00 AM–12:00 PM" }
-        ] },
-        { "title": "Other services", "categories": ["government"], "services": [
-          { "name": "Government service referrals", "categories": ["government"] },
-          "Probation services"
-        ] }
-      ]
+        {
+          "title": "Employment services through WorkSourceOne",
+          "categories": [
+            "employment"
+          ],
+          "services": [
+            {
+              "name": "Job search assistance",
+              "needs": [
+                "Job search"
+              ]
+            },
+            {
+              "name": "Job listings",
+              "needs": [
+                "Job search"
+              ]
+            },
+            {
+              "name": "Résumé preparation",
+              "needs": [
+                "Résumé assistance"
+              ]
+            },
+            {
+              "name": "Career counseling",
+              "needs": [
+                "Career counseling"
+              ]
+            },
+            {
+              "name": "Job training",
+              "categories": [
+                "employment",
+                "education"
+              ],
+              "needs": [
+                "Job training"
+              ]
+            },
+            "Workforce development",
+            {
+              "name": "Tuition assistance",
+              "limitedTo": "Eligible applicants",
+              "categories": [
+                "employment",
+                "education"
+              ],
+              "needs": [
+                "Tuition assistance"
+              ]
+            },
+            {
+              "name": "Youth employment programs",
+              "categories": [
+                "employment",
+                "family"
+              ],
+              "needs": [
+                "Youth employment"
+              ]
+            },
+            "Adult employment programs",
+            {
+              "name": "Disability employment assistance",
+              "needs": [
+                "Disability employment assistance"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Medical and mental health services",
+          "categories": [
+            "medical"
+          ],
+          "services": [
+            {
+              "name": "Mental health counseling",
+              "categories": [
+                "mental-health"
+              ]
+            },
+            "Wellness services",
+            {
+              "name": "Vaccinations",
+              "needs": [
+                "Vaccinations"
+              ]
+            },
+            {
+              "name": "Children's health programs",
+              "categories": [
+                "medical",
+                "family"
+              ]
+            },
+            {
+              "name": "Assistance for children with special healthcare needs",
+              "categories": [
+                "medical",
+                "family"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Addiction services",
+          "categories": [
+            "addiction"
+          ],
+          "services": [
+            "Northpointe outpatient addiction treatment",
+            "Addiction assessments",
+            "Recovery services",
+            {
+              "name": "Open-access services",
+              "hours": "Monday–Friday, 9:00 AM–12:00 PM"
+            }
+          ]
+        },
+        {
+          "title": "Other services",
+          "categories": [
+            "government"
+          ],
+          "services": [
+            {
+              "name": "Government service referrals",
+              "categories": [
+                "government"
+              ]
+            },
+            "Probation services"
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.098675,
+        "longitude": -79.04955,
+        "matchedAddress": "1001, 11th Street, City of Niagara Falls, Niagara County, New York, 14301, United States",
+        "lookupAddress": "1001 11th Street, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 8,
       "name": "Niagara Falls City Hall",
       "address": "745 Main Street",
       "phone": "(716) 286-4300",
-      "categories": ["government", "legal"],
-      "websites": ["https://www.niagarafallsusa.org/"],
+      "categories": [
+        "government",
+        "legal"
+      ],
+      "websites": [
+        "https://www.niagarafallsusa.org/"
+      ],
       "notes": [
         "Birth certificate services may help people who have lost their identification documents. Fees and documentation requirements may apply."
       ],
       "serviceGroups": [
-        { "title": "Services", "categories": ["government"], "services": [
-          { "name": "Birth certificates", "needs": ["Birth certificates", "Government documents"] },
-          { "name": "Death certificates", "needs": ["Government documents"] },
-          { "name": "Marriage licenses", "needs": ["Government documents"] },
-          { "name": "Vital records", "needs": ["Government documents"] },
-          "Disability parking permits",
-          "City clerk services",
-          "Municipal government information",
-          { "name": "Official government documents", "categories": ["government", "legal"], "needs": ["Government documents"] },
-          "Local government assistance and referrals"
-        ] }
-      ]
+        {
+          "title": "Services",
+          "categories": [
+            "government"
+          ],
+          "services": [
+            {
+              "name": "Birth certificates",
+              "needs": [
+                "Birth certificates",
+                "Government documents"
+              ]
+            },
+            {
+              "name": "Death certificates",
+              "needs": [
+                "Government documents"
+              ]
+            },
+            {
+              "name": "Marriage licenses",
+              "needs": [
+                "Government documents"
+              ]
+            },
+            {
+              "name": "Vital records",
+              "needs": [
+                "Government documents"
+              ]
+            },
+            "Disability parking permits",
+            "City clerk services",
+            "Municipal government information",
+            {
+              "name": "Official government documents",
+              "categories": [
+                "government",
+                "legal"
+              ],
+              "needs": [
+                "Government documents"
+              ]
+            },
+            "Local government assistance and referrals"
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.095912,
+        "longitude": -79.0550096,
+        "matchedAddress": "Niagara Falls City Hall, 745, Main Street, City of Niagara Falls, Niagara County, New York, 14301, United States",
+        "lookupAddress": "745 Main Street, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 9,
       "name": "Niagara Falls Housing Authority",
       "address": "744 10th Street",
       "phone": "(716) 285-6961",
-      "categories": ["housing", "employment", "education", "family", "technology", "food"],
+      "categories": [
+        "housing",
+        "employment",
+        "education",
+        "family",
+        "technology",
+        "food"
+      ],
       "eligibility": "Some programs are limited to Housing Authority residents or eligible participants.",
-      "websites": ["https://nfha.org/", "https://www.nha.sunyattain.org/"],
+      "websites": [
+        "https://nfha.org/",
+        "https://www.nha.sunyattain.org/"
+      ],
       "serviceGroups": [
-        { "title": "Housing services", "categories": ["housing"], "services": [
-          { "name": "Affordable housing", "needs": ["Affordable housing"] },
-          "Housing applications",
-          "Residential assistance",
-          "Housing placement programs"
-        ] },
-        { "title": "Employment services", "categories": ["employment"], "services": [
-          { "name": "Career counseling", "needs": ["Career counseling"] },
-          "Workforce preparation",
-          "Career development",
-          { "name": "Vocational preparation", "categories": ["employment", "education"], "needs": ["Vocational training"] }
-        ] },
-        { "title": "Education and technology services", "categories": ["education"], "services": [
-          { "name": "SUNY ATTAIN Lab", "categories": ["education", "technology"] },
-          { "name": "Computer training", "categories": ["education", "technology"], "needs": ["Computer training"] },
-          { "name": "Digital literacy", "categories": ["education", "technology"], "needs": ["Digital literacy"] },
-          "Technical skills development",
-          { "name": "College preparation", "needs": ["College preparation"] },
-          { "name": "Scholarship opportunities", "needs": ["Scholarships"] },
-          { "name": "Youth tutoring", "categories": ["education", "family"], "needs": ["Youth tutoring"] },
-          "Educational workshops"
-        ] },
-        { "title": "Family and community services", "categories": ["family"], "services": [
-          { "name": "Kid's Café children's meal program", "categories": ["food", "family"], "needs": ["Children's meals"] },
-          "Youth development programs",
-          "Senior services",
-          "Health and wellness education",
-          "Mentoring",
-          "Personal development workshops"
-        ] }
-      ]
+        {
+          "title": "Housing services",
+          "categories": [
+            "housing"
+          ],
+          "services": [
+            {
+              "name": "Affordable housing",
+              "needs": [
+                "Affordable housing"
+              ]
+            },
+            "Housing applications",
+            "Residential assistance",
+            "Housing placement programs"
+          ]
+        },
+        {
+          "title": "Employment services",
+          "categories": [
+            "employment"
+          ],
+          "services": [
+            {
+              "name": "Career counseling",
+              "needs": [
+                "Career counseling"
+              ]
+            },
+            "Workforce preparation",
+            "Career development",
+            {
+              "name": "Vocational preparation",
+              "categories": [
+                "employment",
+                "education"
+              ],
+              "needs": [
+                "Vocational training"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Education and technology services",
+          "categories": [
+            "education"
+          ],
+          "services": [
+            {
+              "name": "SUNY ATTAIN Lab",
+              "categories": [
+                "education",
+                "technology"
+              ]
+            },
+            {
+              "name": "Computer training",
+              "categories": [
+                "education",
+                "technology"
+              ],
+              "needs": [
+                "Computer training"
+              ]
+            },
+            {
+              "name": "Digital literacy",
+              "categories": [
+                "education",
+                "technology"
+              ],
+              "needs": [
+                "Digital literacy"
+              ]
+            },
+            "Technical skills development",
+            {
+              "name": "College preparation",
+              "needs": [
+                "College preparation"
+              ]
+            },
+            {
+              "name": "Scholarship opportunities",
+              "needs": [
+                "Scholarships"
+              ]
+            },
+            {
+              "name": "Youth tutoring",
+              "categories": [
+                "education",
+                "family"
+              ],
+              "needs": [
+                "Youth tutoring"
+              ]
+            },
+            "Educational workshops"
+          ]
+        },
+        {
+          "title": "Family and community services",
+          "categories": [
+            "family"
+          ],
+          "services": [
+            {
+              "name": "Kid's Café children's meal program",
+              "categories": [
+                "food",
+                "family"
+              ],
+              "needs": [
+                "Children's meals"
+              ]
+            },
+            "Youth development programs",
+            "Senior services",
+            "Health and wellness education",
+            "Mentoring",
+            "Personal development workshops"
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.0960673,
+        "longitude": -79.0508954,
+        "matchedAddress": "Niagara Falls Housing Authority, 744, 10th Street, City of Niagara Falls, Niagara County, New York, 14301, United States",
+        "lookupAddress": "744 10th Street, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 10,
@@ -327,228 +1246,765 @@
       "address": "1300 Pine Avenue",
       "phone": "(716) 862-8580",
       "phoneNote": "Verify the current clinic contact",
-      "categories": ["veterans", "medical", "mental-health", "addiction"],
+      "categories": [
+        "veterans",
+        "medical",
+        "mental-health",
+        "addiction"
+      ],
       "hours": "Monday–Friday, 8:00 AM–4:30 PM",
       "eligibility": "Eligible veterans. Enrollment and service requirements may apply.",
-      "websites": ["https://www.va.gov/western-new-york-health-care/locations/niagara-falls-va-clinic/"],
+      "websites": [
+        "https://www.va.gov/western-new-york-health-care/locations/niagara-falls-va-clinic/"
+      ],
       "serviceGroups": [
-        { "title": "Medical services", "categories": ["medical", "veterans"], "services": [
-          { "name": "Primary healthcare", "needs": ["Primary care"] },
-          "Preventive healthcare",
-          { "name": "Laboratory testing", "needs": ["Laboratory services"] },
-          { "name": "Blood work", "needs": ["Laboratory services"] },
-          { "name": "Medication assistance", "needs": ["Medication assistance"] },
-          { "name": "Vaccinations", "needs": ["Vaccinations"] },
-          "Women's healthcare coordination",
-          { "name": "Smoking cessation assistance", "categories": ["medical", "addiction", "veterans"] }
-        ] },
-        { "title": "Mental health services", "categories": ["mental-health", "veterans"], "services": [
-          "Individual therapy",
-          "Group therapy",
-          "PTSD support",
-          "Mental health treatment"
-        ] },
-        { "title": "Transportation assistance", "categories": ["veterans"], "services": [
-          { "name": "Medical transportation", "limitedTo": "Eligible veterans" },
-          { "name": "Travel reimbursement", "limitedTo": "Qualifying veterans" }
-        ] }
-      ]
+        {
+          "title": "Medical services",
+          "categories": [
+            "medical",
+            "veterans"
+          ],
+          "services": [
+            {
+              "name": "Primary healthcare",
+              "needs": [
+                "Primary care"
+              ]
+            },
+            "Preventive healthcare",
+            {
+              "name": "Laboratory testing",
+              "needs": [
+                "Laboratory services"
+              ]
+            },
+            {
+              "name": "Blood work",
+              "needs": [
+                "Laboratory services"
+              ]
+            },
+            {
+              "name": "Medication assistance",
+              "needs": [
+                "Medication assistance"
+              ]
+            },
+            {
+              "name": "Vaccinations",
+              "needs": [
+                "Vaccinations"
+              ]
+            },
+            "Women's healthcare coordination",
+            {
+              "name": "Smoking cessation assistance",
+              "categories": [
+                "medical",
+                "addiction",
+                "veterans"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mental health services",
+          "categories": [
+            "mental-health",
+            "veterans"
+          ],
+          "services": [
+            "Individual therapy",
+            "Group therapy",
+            "PTSD support",
+            "Mental health treatment"
+          ]
+        },
+        {
+          "title": "Transportation assistance",
+          "categories": [
+            "veterans"
+          ],
+          "services": [
+            {
+              "name": "Medical transportation",
+              "limitedTo": "Eligible veterans"
+            },
+            {
+              "name": "Travel reimbursement",
+              "limitedTo": "Qualifying veterans"
+            }
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.095184,
+        "longitude": -79.0463145,
+        "matchedAddress": "1300, Pine Avenue, City of Niagara Falls, Niagara County, New York, 14301, United States",
+        "lookupAddress": "1300 Pine Avenue, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 11,
       "name": "Niagara Falls Memorial Medical Center",
       "address": "621 10th Street",
       "phone": "(716) 278-4000",
-      "categories": ["medical"],
-      "cost": { "type": "insurance", "note": "Insurance, billing, and financial assistance requirements vary." },
-      "websites": ["https://www.nfmmc.org/"],
+      "categories": [
+        "medical"
+      ],
+      "cost": {
+        "type": "insurance",
+        "note": "Insurance, billing, and financial assistance requirements vary."
+      },
+      "websites": [
+        "https://www.nfmmc.org/"
+      ],
       "serviceGroups": [
-        { "title": "Services", "categories": ["medical"], "services": [
-          { "name": "Emergency medical care", "hours": "24 hours", "needs": ["Emergency care"] },
-          { "name": "Emergency department", "needs": ["Emergency care"] },
-          { "name": "Primary healthcare", "needs": ["Primary care"] },
-          "Inpatient hospital services",
-          "Outpatient medical services",
-          "Specialist care",
-          "Surgical services",
-          { "name": "Laboratory testing", "needs": ["Laboratory services"] },
-          "Medical imaging",
-          "CT scans",
-          "MRI scans",
-          { "name": "Physical rehabilitation", "needs": ["Rehabilitation"] },
-          { "name": "Physical therapy", "needs": ["Rehabilitation"] },
-          "Mobile community healthcare services"
-        ] }
-      ]
+        {
+          "title": "Services",
+          "categories": [
+            "medical"
+          ],
+          "services": [
+            {
+              "name": "Emergency medical care",
+              "hours": "24 hours",
+              "needs": [
+                "Emergency care"
+              ]
+            },
+            {
+              "name": "Emergency department",
+              "needs": [
+                "Emergency care"
+              ]
+            },
+            {
+              "name": "Primary healthcare",
+              "needs": [
+                "Primary care"
+              ]
+            },
+            "Inpatient hospital services",
+            "Outpatient medical services",
+            "Specialist care",
+            "Surgical services",
+            {
+              "name": "Laboratory testing",
+              "needs": [
+                "Laboratory services"
+              ]
+            },
+            "Medical imaging",
+            "CT scans",
+            "MRI scans",
+            {
+              "name": "Physical rehabilitation",
+              "needs": [
+                "Rehabilitation"
+              ]
+            },
+            {
+              "name": "Physical therapy",
+              "needs": [
+                "Rehabilitation"
+              ]
+            },
+            "Mobile community healthcare services"
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.0931576,
+        "longitude": -79.0500517,
+        "matchedAddress": "Niagara Falls Memorial Medical Center, 621, 10th Street, City of Niagara Falls, Niagara County, New York, 14302, United States",
+        "lookupAddress": "621 10th Street, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 12,
       "name": "BestSelf Behavioral Health",
-      "active": false,
-      "inactiveReason": "A BestSelf program stopped operating at this address on May 30, 2025. This listing stays off the map until the current address and services are confirmed.",
       "address": "2201 Pine Avenue",
       "phone": "(716) 884-0888",
-      "categories": ["mental-health", "addiction", "housing"],
-      "websites": ["https://www.bestselfwny.org/"],
+      "categories": [
+        "mental-health",
+        "addiction",
+        "housing"
+      ],
+      "websites": [
+        "https://www.bestselfwny.org/"
+      ],
+      "notes": [
+        "A BestSelf program stopped operating at this address on May 30, 2025. Call before you go to confirm which services are available here."
+      ],
       "serviceGroups": [
-        { "title": "Organization-wide services", "categories": ["mental-health"], "services": [
-          "Mental health counseling",
-          "Behavioral health treatment",
-          { "name": "Addiction treatment", "categories": ["addiction"] },
-          { "name": "Substance use recovery", "categories": ["addiction"] },
-          { "name": "Homeless outreach", "categories": ["housing"] },
-          { "name": "Supportive housing", "categories": ["housing"] },
-          { "name": "Care management", "categories": [] },
-          { "name": "Medicaid care coordination", "limitedTo": "Eligible individuals", "categories": [] },
-          { "name": "Social service referrals", "categories": [] },
-          { "name": "Crisis assistance referrals", "categories": [] }
-        ] }
-      ]
+        {
+          "title": "Organization-wide services",
+          "categories": [
+            "mental-health"
+          ],
+          "services": [
+            "Mental health counseling",
+            "Behavioral health treatment",
+            {
+              "name": "Addiction treatment",
+              "categories": [
+                "addiction"
+              ]
+            },
+            {
+              "name": "Substance use recovery",
+              "categories": [
+                "addiction"
+              ]
+            },
+            {
+              "name": "Homeless outreach",
+              "categories": [
+                "housing"
+              ]
+            },
+            {
+              "name": "Supportive housing",
+              "categories": [
+                "housing"
+              ]
+            },
+            {
+              "name": "Care management",
+              "categories": []
+            },
+            {
+              "name": "Medicaid care coordination",
+              "limitedTo": "Eligible individuals",
+              "categories": []
+            },
+            {
+              "name": "Social service referrals",
+              "categories": []
+            },
+            {
+              "name": "Crisis assistance referrals",
+              "categories": []
+            }
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.094806,
+        "longitude": -79.0352716,
+        "matchedAddress": "2201, Pine Avenue, Little Italy, City of Niagara Falls, Niagara County, New York, 14301, United States",
+        "lookupAddress": "2201 Pine Avenue, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 13,
       "name": "Horizon Health Services",
       "address": "2400 Pine Avenue",
       "phone": "(716) 505-1060",
-      "otherPhones": [{ "label": "New patient intake", "number": "(716) 831-1800" }],
-      "categories": ["medical", "mental-health", "addiction", "family"],
-      "cost": { "type": "insurance", "note": "Medicaid and various insurance plans accepted." },
-      "websites": ["https://horizon-health.org/location/pine-avenue-recovery-center/"],
+      "otherPhones": [
+        {
+          "label": "New patient intake",
+          "number": "(716) 831-1800"
+        }
+      ],
+      "categories": [
+        "medical",
+        "mental-health",
+        "addiction",
+        "family"
+      ],
+      "cost": {
+        "type": "insurance",
+        "note": "Medicaid and various insurance plans accepted."
+      },
+      "websites": [
+        "https://horizon-health.org/location/pine-avenue-recovery-center/"
+      ],
       "serviceGroups": [
-        { "title": "Mental health services", "categories": ["mental-health"], "services": [
-          "Mental health counseling",
-          "Behavioral health treatment",
-          "Psychiatric evaluations",
-          "Psychiatric treatment",
-          { "name": "Family therapy", "categories": ["mental-health", "family"] },
-          { "name": "Youth therapy", "categories": ["mental-health", "family"] },
-          "Psychiatric rehabilitation"
-        ] },
-        { "title": "Addiction services", "categories": ["addiction"], "services": [
-          "Substance use disorder treatment",
-          { "name": "Addiction medicine", "categories": ["addiction", "medical"] },
-          "Recovery support",
-          "Peer support",
-          "Harm reduction",
-          "Intensive outpatient treatment"
-        ] },
-        { "title": "Other services", "categories": [], "services": [
-          "Case management",
-          "Individual service coordination",
-          { "name": "Healthcare referrals", "categories": ["medical"] }
-        ] }
-      ]
+        {
+          "title": "Mental health services",
+          "categories": [
+            "mental-health"
+          ],
+          "services": [
+            "Mental health counseling",
+            "Behavioral health treatment",
+            "Psychiatric evaluations",
+            "Psychiatric treatment",
+            {
+              "name": "Family therapy",
+              "categories": [
+                "mental-health",
+                "family"
+              ]
+            },
+            {
+              "name": "Youth therapy",
+              "categories": [
+                "mental-health",
+                "family"
+              ]
+            },
+            "Psychiatric rehabilitation"
+          ]
+        },
+        {
+          "title": "Addiction services",
+          "categories": [
+            "addiction"
+          ],
+          "services": [
+            "Substance use disorder treatment",
+            {
+              "name": "Addiction medicine",
+              "categories": [
+                "addiction",
+                "medical"
+              ]
+            },
+            "Recovery support",
+            "Peer support",
+            "Harm reduction",
+            "Intensive outpatient treatment"
+          ]
+        },
+        {
+          "title": "Other services",
+          "categories": [],
+          "services": [
+            "Case management",
+            "Individual service coordination",
+            {
+              "name": "Healthcare referrals",
+              "categories": [
+                "medical"
+              ]
+            }
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.0953233,
+        "longitude": -79.0333433,
+        "matchedAddress": "2400, Pine Avenue, Little Italy, City of Niagara Falls, Niagara County, New York, 14301, United States",
+        "lookupAddress": "2400 Pine Avenue, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 14,
       "name": "Niagara County Department of Social Services",
       "address": "301 10th Street",
       "phone": "(716) 278-8621",
-      "categories": ["government", "food", "housing", "medical", "family"],
+      "categories": [
+        "government",
+        "food",
+        "housing",
+        "medical",
+        "family"
+      ],
       "eligibility": "Income, household circumstances, documentation, and program requirements vary.",
-      "websites": ["https://www.niagaracounty.gov/", "https://mybenefits.ny.gov/"],
+      "websites": [
+        "https://www.niagaracounty.gov/",
+        "https://mybenefits.ny.gov/"
+      ],
       "serviceGroups": [
-        { "title": "Food assistance", "categories": ["food", "government"], "services": [
-          { "name": "SNAP applications", "needs": ["SNAP assistance", "SNAP"] },
-          "Supplemental food benefits",
-          "Food assistance eligibility information"
-        ] },
-        { "title": "Financial assistance", "categories": ["government"], "services": [
-          { "name": "Temporary Assistance", "needs": ["Cash assistance"] },
-          { "name": "Temporary Assistance for Needy Families (TANF)", "categories": ["government", "family"], "needs": ["Cash assistance"] },
-          { "name": "Safety Net Assistance", "needs": ["Cash assistance"] },
-          { "name": "Emergency financial assistance", "needs": ["Cash assistance"] }
-        ] },
-        { "title": "Housing assistance", "categories": ["housing", "government"], "services": [
-          { "name": "Rental assistance", "limitedTo": "Eligible applicants", "needs": ["Rental assistance"] },
-          "Emergency housing-related assistance",
-          { "name": "Home Energy Assistance Program (HEAP)", "categories": ["government"], "needs": ["Utility assistance"] },
-          { "name": "Heating and utility assistance", "categories": ["government"], "needs": ["Utility assistance"] }
-        ] },
-        { "title": "Healthcare assistance", "categories": ["medical", "government"], "services": [
-          { "name": "Medicaid application assistance", "needs": ["Health insurance assistance", "Medicaid"] },
-          { "name": "Health insurance information", "categories": ["medical"], "needs": ["Health insurance assistance"] },
-          { "name": "Child health coverage assistance", "categories": ["medical", "family"], "needs": ["Health insurance assistance"] }
-        ] },
-        { "title": "Social services", "categories": [], "services": [
-          "Adult protective services",
-          "Assistance for vulnerable adults",
-          { "name": "Public benefits referrals", "categories": ["government"] },
-          { "name": "Benefits eligibility information", "categories": ["government"] }
-        ] }
-      ]
+        {
+          "title": "Food assistance",
+          "categories": [
+            "food",
+            "government"
+          ],
+          "services": [
+            {
+              "name": "SNAP applications",
+              "needs": [
+                "SNAP assistance",
+                "SNAP"
+              ]
+            },
+            "Supplemental food benefits",
+            "Food assistance eligibility information"
+          ]
+        },
+        {
+          "title": "Financial assistance",
+          "categories": [
+            "government"
+          ],
+          "services": [
+            {
+              "name": "Temporary Assistance",
+              "needs": [
+                "Cash assistance"
+              ]
+            },
+            {
+              "name": "Temporary Assistance for Needy Families (TANF)",
+              "categories": [
+                "government",
+                "family"
+              ],
+              "needs": [
+                "Cash assistance"
+              ]
+            },
+            {
+              "name": "Safety Net Assistance",
+              "needs": [
+                "Cash assistance"
+              ]
+            },
+            {
+              "name": "Emergency financial assistance",
+              "needs": [
+                "Cash assistance"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Housing assistance",
+          "categories": [
+            "housing",
+            "government"
+          ],
+          "services": [
+            {
+              "name": "Rental assistance",
+              "limitedTo": "Eligible applicants",
+              "needs": [
+                "Rental assistance"
+              ]
+            },
+            "Emergency housing-related assistance",
+            {
+              "name": "Home Energy Assistance Program (HEAP)",
+              "categories": [
+                "government"
+              ],
+              "needs": [
+                "Utility assistance"
+              ]
+            },
+            {
+              "name": "Heating and utility assistance",
+              "categories": [
+                "government"
+              ],
+              "needs": [
+                "Utility assistance"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Healthcare assistance",
+          "categories": [
+            "medical",
+            "government"
+          ],
+          "services": [
+            {
+              "name": "Medicaid application assistance",
+              "needs": [
+                "Health insurance assistance",
+                "Medicaid"
+              ]
+            },
+            {
+              "name": "Health insurance information",
+              "categories": [
+                "medical"
+              ],
+              "needs": [
+                "Health insurance assistance"
+              ]
+            },
+            {
+              "name": "Child health coverage assistance",
+              "categories": [
+                "medical",
+                "family"
+              ],
+              "needs": [
+                "Health insurance assistance"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Social services",
+          "categories": [],
+          "services": [
+            "Adult protective services",
+            "Assistance for vulnerable adults",
+            {
+              "name": "Public benefits referrals",
+              "categories": [
+                "government"
+              ]
+            },
+            {
+              "name": "Benefits eligibility information",
+              "categories": [
+                "government"
+              ]
+            }
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.087113,
+        "longitude": -79.0496108,
+        "matchedAddress": "301, 10th Street, City of Niagara Falls, Niagara County, New York, 14303, United States",
+        "lookupAddress": "301 10th Street, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 15,
       "name": "Community Missions of Niagara Frontier",
       "address": "1570 Buffalo Avenue",
       "phone": "(716) 285-3403",
-      "categories": ["housing", "food", "clothing", "mental-health", "family", "legal"],
-      "websites": ["https://www.communitymissions.org/our-services"],
+      "categories": [
+        "housing",
+        "food",
+        "clothing",
+        "mental-health",
+        "family",
+        "legal"
+      ],
+      "websites": [
+        "https://www.communitymissions.org/our-services"
+      ],
       "notes": [
         "Call to confirm whether lunch is served on Saturdays.",
         "Some programs operate at separate locations and have specific eligibility requirements."
       ],
       "serviceGroups": [
-        { "title": "Food services", "categories": ["food"], "services": [
-          { "name": "Free community lunch", "hours": "Monday–Friday, 12:00–1:00 PM", "needs": ["Lunch", "Free meals"] },
-          { "name": "Food pantry", "needs": ["Food pantry"] },
-          "Grocery assistance"
-        ] },
-        { "title": "Housing services", "categories": ["housing"], "services": [
-          { "name": "Emergency shelter", "needs": ["Emergency shelter"] },
-          { "name": "Temporary accommodation", "limitedTo": "Eligible individuals and families" },
-          "Supportive housing",
-          { "name": "Transitional housing programs", "needs": ["Transitional housing"] }
-        ] },
-        { "title": "Personal necessities", "categories": ["clothing"], "services": [
-          { "name": "Free clothing", "needs": ["Free clothing"] },
-          "Clothing accessories",
-          { "name": "Household supplies", "needs": ["Household supplies"] },
-          { "name": "Furniture giveaway program", "needs": ["Furniture"] }
-        ] },
-        { "title": "Mental health services", "categories": ["mental-health"], "services": [
-          "Mental health recovery",
-          "Niagara Visions PROS program",
-          "Hope House peer recovery respite",
-          "Peer support"
-        ] },
-        { "title": "Family and community services", "categories": ["family"], "services": [
-          "Youth residential programs",
-          "Family support",
-          { "name": "Supervised family visitation", "categories": ["family", "legal"] },
-          { "name": "Reentry assistance", "categories": ["legal"] },
-          { "name": "Violence prevention", "categories": ["legal"] },
-          { "name": "Niagara Falls SNUG program", "categories": ["legal"] },
-          { "name": "Spiritual support", "categories": [] }
-        ] }
-      ]
+        {
+          "title": "Food services",
+          "categories": [
+            "food"
+          ],
+          "services": [
+            {
+              "name": "Free community lunch",
+              "hours": "Monday–Friday, 12:00–1:00 PM",
+              "needs": [
+                "Lunch",
+                "Free meals"
+              ]
+            },
+            {
+              "name": "Food pantry",
+              "needs": [
+                "Food pantry"
+              ]
+            },
+            "Grocery assistance"
+          ]
+        },
+        {
+          "title": "Housing services",
+          "categories": [
+            "housing"
+          ],
+          "services": [
+            {
+              "name": "Emergency shelter",
+              "needs": [
+                "Emergency shelter"
+              ]
+            },
+            {
+              "name": "Temporary accommodation",
+              "limitedTo": "Eligible individuals and families"
+            },
+            "Supportive housing",
+            {
+              "name": "Transitional housing programs",
+              "needs": [
+                "Transitional housing"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Personal necessities",
+          "categories": [
+            "clothing"
+          ],
+          "services": [
+            {
+              "name": "Free clothing",
+              "needs": [
+                "Free clothing"
+              ]
+            },
+            "Clothing accessories",
+            {
+              "name": "Household supplies",
+              "needs": [
+                "Household supplies"
+              ]
+            },
+            {
+              "name": "Furniture giveaway program",
+              "needs": [
+                "Furniture"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mental health services",
+          "categories": [
+            "mental-health"
+          ],
+          "services": [
+            "Mental health recovery",
+            "Niagara Visions PROS program",
+            "Hope House peer recovery respite",
+            "Peer support"
+          ]
+        },
+        {
+          "title": "Family and community services",
+          "categories": [
+            "family"
+          ],
+          "services": [
+            "Youth residential programs",
+            "Family support",
+            {
+              "name": "Supervised family visitation",
+              "categories": [
+                "family",
+                "legal"
+              ]
+            },
+            {
+              "name": "Reentry assistance",
+              "categories": [
+                "legal"
+              ]
+            },
+            {
+              "name": "Violence prevention",
+              "categories": [
+                "legal"
+              ]
+            },
+            {
+              "name": "Niagara Falls SNUG program",
+              "categories": [
+                "legal"
+              ]
+            },
+            {
+              "name": "Spiritual support",
+              "categories": []
+            }
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.0835305,
+        "longitude": -79.0432943,
+        "matchedAddress": "1570, Buffalo Avenue, City of Niagara Falls, Niagara County, New York, 14303, United States",
+        "lookupAddress": "1570 Buffalo Avenue, Niagara Falls, NY, USA"
+      }
     },
     {
       "id": 16,
       "name": "Northpointe Council First Step Center",
       "address": "2470 Allen Avenue",
       "phone": "(716) 285-3421",
-      "categories": ["addiction", "medical", "mental-health"],
+      "categories": [
+        "addiction",
+        "medical",
+        "mental-health"
+      ],
       "hours": "Open 24 hours, 7 days a week",
-      "websites": ["https://www.northpointecouncil.org/first-step/"],
+      "websites": [
+        "https://www.northpointecouncil.org/first-step/"
+      ],
       "notes": [
         "24 residential treatment beds; availability varies.",
-        "Outpatient treatment is also available at the Trott Access Center (#7)."
+        "Outpatient treatment is also available at the Trott Access Center."
       ],
       "serviceGroups": [
-        { "title": "Services", "categories": ["addiction"], "services": [
-          { "name": "Medically supervised detoxification", "categories": ["addiction", "medical"] },
-          { "name": "Withdrawal management", "categories": ["addiction", "medical"] },
-          "Residential stabilization",
-          "Short-term residential addiction treatment",
-          { "name": "Addiction medication management", "categories": ["addiction", "medical"], "needs": ["Medication assistance"] },
-          { "name": "Psychiatric medication management", "categories": ["mental-health", "medical"], "needs": ["Medication assistance"] },
-          { "name": "Recovery counseling", "categories": ["addiction", "mental-health"] },
-          { "name": "Addiction treatment planning", "categories": ["addiction"] },
-          { "name": "Recovery referrals", "categories": ["addiction"] }
-        ] }
-      ]
+        {
+          "title": "Services",
+          "categories": [
+            "addiction"
+          ],
+          "services": [
+            {
+              "name": "Medically supervised detoxification",
+              "categories": [
+                "addiction",
+                "medical"
+              ]
+            },
+            {
+              "name": "Withdrawal management",
+              "categories": [
+                "addiction",
+                "medical"
+              ]
+            },
+            "Residential stabilization",
+            "Short-term residential addiction treatment",
+            {
+              "name": "Addiction medication management",
+              "categories": [
+                "addiction",
+                "medical"
+              ],
+              "needs": [
+                "Medication assistance"
+              ]
+            },
+            {
+              "name": "Psychiatric medication management",
+              "categories": [
+                "mental-health",
+                "medical"
+              ],
+              "needs": [
+                "Medication assistance"
+              ]
+            },
+            {
+              "name": "Recovery counseling",
+              "categories": [
+                "addiction",
+                "mental-health"
+              ]
+            },
+            {
+              "name": "Addiction treatment planning",
+              "categories": [
+                "addiction"
+              ]
+            },
+            {
+              "name": "Recovery referrals",
+              "categories": [
+                "addiction"
+              ]
+            }
+          ]
+        }
+      ],
+      "coordinates": {
+        "latitude": 43.0843355,
+        "longitude": -79.0301078,
+        "matchedAddress": "2470, Allen Avenue, City of Niagara Falls, Niagara County, New York, 14303, United States",
+        "lookupAddress": "2470 Allen Avenue, Niagara Falls, NY, USA"
+      }
     }
   ]
 }
