@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#12345a">
+    <title>Niagara Falls Resource Map</title>
+    <meta name="description" content="Free map of food, shelter, health, and support services in Niagara Falls, New York.">
+    <link rel="stylesheet" href="/assets/map.css">
+    <script type="module" src="/assets/map.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Niagara Falls Resource Map</h1>
+      <nav class="emergency" aria-label="Emergency phone numbers">
+        <a class="sos urgent" href="tel:911"><strong>911</strong> Emergency</a>
+        <a class="sos" href="tel:988"><strong>988</strong> Crisis line</a>
+        <a class="sos" href="tel:211"><strong>211</strong> Help</a>
+        <details class="emergency-more">
+          <summary>More</summary>
+          <ul>
+            <li><button type="button" class="link-button" data-show-location="11">24-hour emergency care: Memorial Medical Center</button></li>
+            <li><button type="button" class="link-button" data-show-location="4">Domestic violence &amp; crisis help: Pinnacle</button></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <main class="app" id="app" data-view="map">
+      <section class="controls" id="controls" aria-label="Find services">
+        <label class="visually-hidden" for="search">Search services or places</label>
+        <input id="search" type="search" autocomplete="off" enterkeyhint="search" placeholder="Search: lunch, showers, SNAP…">
+        <div class="chip-row" id="category-filters" role="group" aria-label="Filter by category"></div>
+        <div class="chip-row needs" id="need-filters" role="group" aria-label="Filter by specific need" hidden></div>
+        <div class="summary-row">
+          <p id="summary" aria-live="polite"></p>
+          <button id="clear-filters" type="button" class="link-button" hidden>Clear filters</button>
+        </div>
+        <div class="view-toggle" role="group" aria-label="Show">
+          <button type="button" data-view-button="map" aria-pressed="true">Map</button>
+          <button type="button" data-view-button="list" aria-pressed="false">List</button>
+        </div>
+      </section>
+
+      <section class="list-panel" aria-labelledby="directory-heading">
+        <h2 id="directory-heading" class="visually-hidden">Places</h2>
+        <div id="directory"></div>
+      </section>
+
+      <section class="map-panel" aria-label="Map">
+        <div id="map" aria-label="Map of Niagara Falls service locations"></div>
+      </section>
+      <p id="status" class="status" role="status">Loading…</p>
+    </main>
+
+    <footer class="site-footer">
+      <details>
+        <summary>Share this map</summary>
+        <img width="144" height="144" src="/qr.png" loading="lazy" alt="QR code that opens this map">
+        <a href="/qr.png" download="niagara_falls_resource_map_qr.png">Download QR code</a>
+      </details>
+      <details id="inactive-section" hidden>
+        <summary>Listings not shown on the map</summary>
+        <ul id="inactive-list"></ul>
+      </details>
+      <details>
+        <summary>Address matching details</summary>
+        <p>Compare each listed address with the geocoder’s match to check that each pin is in the right place.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col">ID</th><th scope="col">Location</th><th scope="col">Listed address</th><th scope="col">Matched address</th><th scope="col">Latitude</th><th scope="col">Longitude</th></tr>
+            </thead>
+            <tbody id="address-review"></tbody>
+          </table>
+        </div>
+        <button id="refresh" type="button" disabled>Re-geocode all addresses</button>
+      </details>
+      <p>Service details can change. Please call to confirm before you go. Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p>
+    </footer>
+  </body>
+</html>
