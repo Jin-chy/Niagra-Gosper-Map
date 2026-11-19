@@ -15,7 +15,7 @@ npm ci
 npm run dev
 ```
 
-`npm run dev` checks types, builds the site, and serves it at `http://localhost:8788`. New or changed addresses require access to the configured geocoder. Commit `data/locations.json` together with the coordinates the build writes into it.
+`npm run dev` checks types, builds the site, and serves it at `http://localhost:8788`. Pushing to `main` publishes the site automatically through Cloudflare Pages. New or changed addresses require access to the configured geocoder. Commit `data/locations.json` together with the coordinates the build writes into it.
 
 ## Coding Style
 

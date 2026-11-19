@@ -12,8 +12,7 @@
     "build:client": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\" && esbuild src/map.ts --bundle --minify --format=esm --outdir=dist/public/assets --loader:.png=file --log-level=warning",
     "build:data": "esbuild scripts/build.ts --bundle --platform=node --format=esm --packages=external --outfile=dist/build.mjs --log-level=warning && node dist/build.mjs",
     "geocode:all": "npm run build:data -- --refresh",
-    "dev": "npm run build && wrangler pages dev",
-    "deploy": "npm run build && wrangler pages deploy --branch main"
+    "dev": "npm run build && wrangler pages dev"
   },
   "devDependencies": {
     "@types/leaflet": "1.9.21",

@@ -9,7 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `npm run check`: type-check (`tsc --noEmit`). There are no automated tests or linter, so this is the only automated check.
 - `npm run build`: type-check, delete `dist/`, bundle the client to `dist/public/assets/`, then bundle and run `scripts/build.ts` (as `dist/build.mjs`) to write `dist/public/index.html`, `locations.json`, and `qr.png`.
 - `npm run dev`: build, then serve `dist/public/` with `wrangler pages dev` at `http://localhost:8788`, the same way Cloudflare serves it.
-- `npm run deploy`: build and publish to the `niagara-falls-resource-map` Cloudflare Pages project (production, `--branch main`). Needs `npx wrangler login` once.
+- Publishing: the `niagara-falls-resource-map` Cloudflare Pages project is Git-connected. Each push to `main` runs `npm run build` on Cloudflare (with `NODE_VERSION=22`) and publishes `dist/public`. There is no manual deploy command. Don't run `wrangler deploy`, which is the Workers command and fails for this Pages project.
 - `npm run geocode:all`: look up every address again instead of only new or changed ones.
 - Build environment variables: `PUBLIC_URL` (QR code target, defaults to the pages.dev address) and `NOMINATIM_URL` (geocoder search endpoint).
 

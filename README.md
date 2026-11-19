@@ -17,12 +17,9 @@ Open `http://localhost:8788`. The site runs exactly as it does on Cloudflare.
 
 ## Publish
 
-```sh
-npx wrangler login   # once
-npm run deploy
-```
+The Cloudflare Pages project `niagara-falls-resource-map` is connected to this GitHub repository. Every push to `main` builds the site with `npm run build` and publishes `dist/public` in about a minute, including edits made in GitHub's web editor. No commands or Cloudflare login are needed. Check build progress and logs in the Cloudflare dashboard under **Workers & Pages** → **niagara-falls-resource-map** → **Deployments**, where you can also roll back to an earlier version.
 
-`npm run deploy` builds the site and publishes it to Cloudflare in about 30 seconds.
+To try a change before it goes live, run `npm run dev` locally first. If an address was added or changed, commit the coordinates the build saves into `data/locations.json` so later builds don't look it up again.
 
 ## Editing the map
 
